@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>가온대중예술아카데미 | 광주 보컬·랩·작곡·연기·DJ</title>
+  <meta name="description" content="광주 전남대 후문 가온대중예술아카데미. 1:1 레슨, 녹음, 공연, 오디션, 포트폴리오까지 아티스트의 가능성을 결과물로 만듭니다.">
+  <meta name="theme-color" content="#08080b">
+  <meta property="og:title" content="GA:ON ARTIST STUDIO">
+  <meta property="og:description" content="당신의 가능성을 결과물로 만듭니다.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#08080b;--surface:#101015;--surface2:#17171f;--text:#fff;
+      --muted:#aaa8b3;--line:#292832;--purple:#7c3aed;--purple2:#a855f7;
+      --max:1180px;--nav:70px
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 16px)}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans KR",sans-serif;line-height:1.65;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),calc(100% - 34px));margin:auto}
+    .eyebrow{font:800 .75rem/1 Inter,sans-serif;letter-spacing:.22em;color:var(--purple2)}
+    .purple{color:var(--purple2)}
+    .nav{height:var(--nav);position:fixed;z-index:999;left:0;right:0;top:0;background:rgba(8,8,11,.82);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(16px)}
+    .nav-inner{height:100%;display:flex;align-items:center;gap:20px}
+    .brand{font:900 1rem Inter,sans-serif;letter-spacing:.04em;white-space:nowrap}
+    .brand b{color:var(--purple2)}
+    .nav-links{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
+    .nav-links::-webkit-scrollbar{display:none}
+    .nav-links a{white-space:nowrap;padding:9px 11px;border-radius:999px;font:800 .69rem Inter,sans-serif;letter-spacing:.04em;color:#ccc9d4;border:1px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:#fff;border-color:var(--purple);background:rgba(124,58,237,.16)}
+    .nav-cta{padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,var(--purple),var(--purple2));font-weight:900;font-size:.82rem;white-space:nowrap}
+    .hero{min-height:100svh;position:relative;display:grid;align-items:end;padding:calc(var(--nav) + 80px) 0 64px;overflow:hidden}
+    .hero-media{position:absolute;inset:0;background:
+      linear-gradient(90deg,rgba(8,8,11,.98),rgba(8,8,11,.73) 48%,rgba(8,8,11,.16)),
+      linear-gradient(0deg,#08080b 0%,transparent 40%),
+      url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2200&q=88") center/cover}
+    .hero-orb{position:absolute;width:520px;height:520px;border-radius:50%;right:-170px;bottom:-150px;background:var(--purple);filter:blur(170px);opacity:.22}
+    .hero-content{position:relative;z-index:2;max-width:900px}
+    .hero h1{font:900 clamp(3.3rem,8.8vw,8rem)/.86 Inter,sans-serif;letter-spacing:-.075em;margin:20px 0 28px}
+    .hero h1 span{display:block;color:transparent;-webkit-text-stroke:1.2px #fff}
+    .hero-copy{max-width:680px;color:#dddbe4;font-size:clamp(1rem,2vw,1.23rem)}
+    .actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}
+    .btn{min-height:50px;padding:0 23px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:900;border:1px solid var(--line);transition:.25s}
+    .btn.primary{background:linear-gradient(135deg,var(--purple),var(--purple2));border:0}
+    .btn.ghost{background:rgba(255,255,255,.05)}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:48px}
+    .hero-meta div{font:700 .72rem/1.35 Inter,sans-serif;letter-spacing:.07em;color:#9997a2}
+    .hero-meta b{display:block;color:#fff;font-size:.95rem;margin-bottom:5px}
+    section{padding:108px 0;border-top:1px solid var(--line)}
+    .head{display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;align-items:end;margin-bottom:52px}
+    .head h2{font:900 clamp(2.7rem,6vw,5.7rem)/.93 Inter,sans-serif;letter-spacing:-.065em;margin:12px 0 0}
+    .head p{margin:0;color:var(--muted);font-size:1.02rem;max-width:650px}
+    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
+    .about-photo{min-height:560px;border-radius:28px;overflow:hidden;position:relative;background:url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1500&q=85") center/cover}
+    .about-photo:after{content:"GA:ON ARTIST STUDIO";position:absolute;left:24px;bottom:22px;font:900 .72rem Inter,sans-serif;letter-spacing:.2em}
+    .cards{display:grid;gap:12px}
+    .card{padding:23px;border-radius:22px;background:linear-gradient(145deg,#15151c,#0d0d12);border:1px solid var(--line)}
+    .card strong{display:block;font-size:1.02rem}
+    .card p{margin:7px 0 0;color:var(--muted);font-size:.9rem}
+    .program{min-height:86svh;display:grid;align-items:center;position:relative;overflow:hidden}
+    .program:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#08080b 0%,rgba(8,8,11,.9) 48%,rgba(8,8,11,.22)),var(--img) center/cover;opacity:.8}
+    .program:nth-of-type(even):before{background:linear-gradient(270deg,#08080b 0%,rgba(8,8,11,.9) 48%,rgba(8,8,11,.22)),var(--img) center/cover}
+    .program-inner{position:relative;z-index:2;max-width:720px}
+    .program:nth-of-type(even) .program-inner{margin-left:auto}
+    .program h2{font:900 clamp(3.7rem,8vw,7.4rem)/.86 Inter,sans-serif;letter-spacing:-.075em;margin:17px 0 24px}
+    .program h3{font-size:clamp(1.45rem,3vw,2.35rem);line-height:1.25;margin:0 0 17px}
+    .program p{color:#cbc8d2;max-width:650px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin:23px 0 29px}
+    .chip{padding:8px 13px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(8,8,11,.68);font-size:.79rem;font-weight:800;backdrop-filter:blur(8px)}
+    .vocal{--img:url("https://images.unsplash.com/photo-1524650359799-842906ca1c06?auto=format&fit=crop&w=1900&q=85")}
+    .rap{--img:url("https://images.unsplash.com/photo-1571266028243-d220c9c3b2d2?auto=format&fit=crop&w=1900&q=85")}
+    .composition{--img:url("https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1900&q=85")}
+    .singer{--img:url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1900&q=85")}
+    .acting{--img:url("https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1900&q=85")}
+    .dj{--img:url("https://images.unsplash.com/photo-1571266028243-e4733b0f0bb5?auto=format&fit=crop&w=1900&q=85")}
+    .works-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:15px}
+    .work{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--line);min-height:300px;background:#15151d}
+    .work:nth-child(1){grid-column:span 7;min-height:420px}.work:nth-child(2){grid-column:span 5;min-height:420px}.work:nth-child(n+3){grid-column:span 4}
+    .work img{width:100%;height:100%;object-fit:cover;opacity:.72;transition:.35s}
+    .work:hover img{transform:scale(1.04);opacity:.9}
+    .work-info{position:absolute;left:19px;right:19px;bottom:18px}
+    .work-info small{font:900 .68rem Inter,sans-serif;letter-spacing:.15em;color:#d9bdff}
+    .work-info h3{margin:6px 0 0;font-size:1.28rem}
+    .results{background:linear-gradient(135deg,#120c20,#08080b 58%)}
+    .result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+    .result{min-height:215px;padding:28px 23px;border-radius:23px;border:1px solid rgba(168,85,247,.25);background:rgba(255,255,255,.035)}
+    .result strong{display:block;font:900 clamp(2.2rem,4vw,4rem) Inter,sans-serif;color:var(--purple2);margin-bottom:28px}
+    .result p{font-weight:800;margin:0}.result small{color:var(--muted)}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+    .contact-copy h2{font:900 clamp(3.2rem,7vw,6.2rem)/.9 Inter,sans-serif;letter-spacing:-.07em;margin:12px 0 25px}
+    .contact-copy p{color:var(--muted)}
+    form{padding:27px;border:1px solid var(--line);border-radius:28px;background:var(--surface)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+    label{display:block;margin-bottom:7px;color:#ccc9d4;font-size:.81rem;font-weight:800}
+    input,select,textarea{width:100%;padding:14px;border-radius:14px;border:1px solid var(--line);background:#0b0b10;color:#fff;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--purple)}
+    textarea{min-height:128px;resize:vertical}.full{grid-column:1/-1}
+    .submit{width:100%;margin-top:13px;border:0;cursor:pointer}
+    .notice{font-size:.73rem;color:#817f89;margin:10px 0 0}
+    footer{padding:50px 0 92px;border-top:1px solid var(--line)}
+    .footer-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+    .footer-brand{font:900 1.35rem Inter,sans-serif}.footer-brand b{color:var(--purple2)}
+    footer p{color:var(--muted);font-size:.86rem}
+    .social{display:flex;gap:8px;flex-wrap:wrap}.social a{padding:10px 13px;border-radius:999px;border:1px solid var(--line);font:800 .72rem Inter,sans-serif}
+    .floating{display:none}
+    .reveal{opacity:0;transform:translateY(34px);transition:.75s ease}
+    .reveal.show{opacity:1;transform:none}
+    @media(max-width:850px){
+      :root{--nav:62px}
+      .wrap{width:min(100% - 26px,var(--max))}
+      .nav-inner{gap:10px}.brand{font-size:.9rem}.nav-cta{display:none}
+      .nav-links a{font-size:.64rem;padding:8px 9px}
+      .hero{padding-bottom:45px}.hero-media{background:linear-gradient(0deg,#08080b 0%,rgba(8,8,11,.64) 58%,rgba(8,8,11,.2)),url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1100&q=82") center/cover}
+      .hero h1{font-size:clamp(3.5rem,17vw,5.8rem)}.hero-meta{gap:17px}
+      section{padding:82px 0}.head,.about-grid,.contact-grid{grid-template-columns:1fr}.head{gap:18px;margin-bottom:36px}
+      .about-photo{min-height:390px}
+      .program{min-height:760px}.program:before,.program:nth-of-type(even):before{background:linear-gradient(0deg,#08080b 6%,rgba(8,8,11,.77) 64%,rgba(8,8,11,.22)),var(--img) center/cover}
+      .program-inner,.program:nth-of-type(even) .program-inner{margin:270px 0 0}.program h2{font-size:clamp(3.4rem,16vw,5.2rem)}
+      .works-grid{grid-template-columns:1fr}.work,.work:nth-child(1),.work:nth-child(2),.work:nth-child(n+3){grid-column:auto;min-height:310px}
+      .result-grid{grid-template-columns:1fr 1fr}.result{min-height:185px}
+      .form-grid{grid-template-columns:1fr}.full{grid-column:auto}
+      .floating{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:11px;right:11px;bottom:11px;z-index:1100}
+      .floating a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 8px 28px rgba(0,0,0,.35)}
+      .floating .call{background:#fff;color:#09090c}.floating .chat{background:linear-gradient(135deg,var(--purple),var(--purple2))}
+    }
+    @media(max-width:520px){.result-grid{grid-template-columns:1fr}.hero-actions .btn{width:100%}.hero-meta{display:grid;grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home">GA:<b>ON</b></a>
+    <nav class="nav-links">
+      <a href="#about">ABOUT</a><a href="#vocal">VOCAL</a><a href="#rap">RAP</a><a href="#composition">COMPOSITION</a><a href="#singer">SINGER</a><a href="#acting">ACTING</a><a href="#dj">DJ</a><a href="#works">WORKS</a><a href="#contact">CONTACT</a>
+    </nav>
+    <a class="nav-cta" href="#contact">상담 신청</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-media"></div><div class="hero-orb"></div>
+  <div class="wrap hero-content reveal">
+    <div class="eyebrow">GA:ON ARTIST STUDIO</div>
+    <h1>LESSON.<span>CREATE. PERFORM.</span></h1>
+    <p class="hero-copy">가온은 단순히 수업만 하는 곳이 아닙니다. 배우고, 녹음하고, 촬영하고, 무대에 서며 한 사람의 아티스트가 성장하는 과정을 함께합니다.</p>
+    <div class="actions"><a class="btn primary" href="#vocal">수강과목 보기</a><a class="btn ghost" href="#contact">상담 신청하기</a></div>
+    <div class="hero-meta">
+      <div><b>1:1 LESSON</b>개인 맞춤 트레이닝</div>
+      <div><b>RECORDING</b>매 수업 녹음과 피드백</div>
+      <div><b>PORTFOLIO</b>음원·영상·프로필 제작</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">ABOUT GA:ON</div><h2>WE BUILD<br><span class="purple">ARTISTS.</span></h2></div><p>가온대중예술아카데미는 개인의 목소리와 가능성을 발견하고, 레슨에서 끝나지 않는 실제 결과물로 완성합니다.</p></div>
+    <div class="about-grid">
+      <div class="about-photo reveal"></div>
+      <div class="cards">
+        <div class="card reveal"><strong>01 · 1:1 맞춤 레슨</strong><p>현재 실력과 목표를 분석해 개인별 커리큘럼으로 진행합니다.</p></div>
+        <div class="card reveal"><strong>02 · 매 수업 녹음</strong><p>본인의 소리를 직접 확인하고 즉시 문제를 수정합니다.</p></div>
+        <div class="card reveal"><strong>03 · 포트폴리오 제작</strong><p>커버, 자작곡, 프로필, 오디션 영상을 결과물로 남깁니다.</p></div>
+        <div class="card reveal"><strong>04 · 무대와 콘텐츠</strong><p>GA:ON Stage와 SIA's Vinyl Room 등 실제 경험으로 연결합니다.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="program vocal" id="vocal"><div class="wrap"><div class="program-inner reveal"><div class="eyebrow">01 · VOCAL</div><h2>VOCAL</h2><h3>내 목소리를 이해하는 순간, 노래가 달라집니다.</h3><p>호흡, 발성, 음정, 리듬, 고음과 표현력을 단계별로 익히고 매 수업 녹음으로 변화를 확인합니다.</p><div class="chips"><span class="chip">발성</span><span class="chip">음정</span><span class="chip">고음</span><span class="chip">리듬</span><span class="chip">감정 표현</span><span class="chip">레코딩</span></div><a class="btn primary" href="#contact" data-subject="보컬">보컬 상담받기</a></div></div></section>
+<section class="program rap" id="rap"><div class="wrap"><div class="program-inner reveal"><div class="eyebrow">02 · RAP</div><h2>RAP</h2><h3>따라 하는 랩이 아닌, 나만의 스타일을 만듭니다.</h3><p>기초 박자부터 플로우, 딕션, 가사 작성과 녹음까지 실제 곡을 완성하는 방식으로 진행합니다.</p><div class="chips"><span class="chip">리듬</span><span class="chip">플로우</span><span class="chip">딕션</span><span class="chip">작사</span><span class="chip">레코딩</span><span class="chip">오디션</span></div><a class="btn primary" href="#contact" data-subject="랩">랩 상담받기</a></div></div></section>
+<section class="program composition" id="composition"><div class="wrap"><div class="program-inner reveal"><div class="eyebrow">03 · COMPOSITION</div><h2>MAKE<br>MUSIC.</h2><h3>머릿속의 음악을 실제 한 곡으로 완성합니다.</h3><p>미디 프로그램 기초부터 코드 진행, 멜로디 메이킹, 편곡, 작사와 보컬 디렉팅까지 배웁니다.</p><div class="chips"><span class="chip">MIDI</span><span class="chip">코드</span><span class="chip">멜로디</span><span class="chip">편곡</span><span class="chip">작사</span><span class="chip">데모 제작</span></div><a class="btn primary" href="#contact" data-subject="작곡·미디">작곡 상담받기</a></div></div></section>
+<section class="program singer" id="singer"><div class="wrap"><div class="program-inner reveal"><div class="eyebrow">04 · SINGER-SONGWRITER</div><h2>YOUR<br>STORY.</h2><h3>노래하고, 만들고, 기록하다.</h3><p>보컬과 작곡을 함께 배우며 본인의 목소리와 이야기가 담긴 자작곡을 제작합니다.</p><div class="chips"><span class="chip">보컬</span><span class="chip">작곡</span><span class="chip">자작곡</span><span class="chip">녹음본</span><span class="chip">라이브 영상</span><span class="chip">포트폴리오</span></div><a class="btn primary" href="#contact" data-subject="싱어송라이터">싱어송라이터 상담</a></div></div></section>
+<section class="program acting" id="acting"><div class="wrap"><div class="program-inner reveal"><div class="eyebrow">05 · ACTING</div><h2>ACTING</h2><h3>카메라 앞에서도, 무대 위에서도 자연스럽게.</h3><p>발성·발음, 감정 표현, 장면 연기와 카메라 테스트를 진행하고 오디션에 필요한 결과물을 준비합니다.</p><div class="chips"><span class="chip">발성·발음</span><span class="chip">감정 표현</span><span class="chip">장면 연기</span><span class="chip">카메라 테스트</span><span class="chip">오디션 영상</span><span class="chip">프로필</span></div><a class="btn primary" href="#contact" data-subject="연기">연기 상담받기</a></div></div></section>
+<section class="program dj" id="dj"><div class="wrap"><div class="program-inner reveal"><div class="eyebrow">06 · DJ</div><h2>CONTROL<br>THE FLOOR.</h2><h3>음악을 듣는 사람에서 무대를 만드는 사람으로.</h3><p>장비 사용법, 큐 포인트, 비트 매칭, 전환과 장르별 믹싱을 배우고 나만의 공연 셋을 제작합니다.</p><div class="chips"><span class="chip">Pioneer XDJ-RX2</span><span class="chip">큐 포인트</span><span class="chip">비트 매칭</span><span class="chip">전환</span><span class="chip">장르 믹싱</span><span class="chip">공연 셋</span></div><a class="btn primary" href="#contact" data-subject="DJ">DJ 상담받기</a></div></div></section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">GA:ON WORKS</div><h2>LESSON<br><span class="purple">BECOMES CONTENT.</span></h2></div><p>배운 것을 녹음하고 촬영하며 실제 콘텐츠로 남깁니다. 현재 이미지는 임시 이미지이며 실제 가온 사진으로 교체하면 됩니다.</p></div>
+    <div class="works-grid">
+      <a class="work reveal" href="https://www.youtube.com/@GAON062/videos" target="_blank"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80" alt=""><div class="work-info"><small>GA:ON STAGE</small><h3>학생 라이브 퍼포먼스</h3></div></a>
+      <a class="work reveal" href="https://www.youtube.com/@GAON062/videos" target="_blank"><img src="https://images.unsplash.com/photo-1598387993281-cecf8b71a8f8?auto=format&fit=crop&w=1000&q=80" alt=""><div class="work-info"><small>GA:ON RECORD</small><h3>레코딩 & 제작 과정</h3></div></a>
+      <a class="work reveal" href="https://www.youtube.com/@GAON062/videos" target="_blank"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt=""><div class="work-info"><small>GA:ON TRACK</small><h3>커버 · 자작곡</h3></div></a>
+      <a class="work reveal" href="https://www.youtube.com/@GAON062/videos" target="_blank"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=800&q=80" alt=""><div class="work-info"><small>ACTING PROFILE</small><h3>연기 · 자기소개 영상</h3></div></a>
+      <a class="work reveal" href="https://www.youtube.com/@GAON062/videos" target="_blank"><img src="https://images.unsplash.com/photo-1571266028243-d220c9c3b2d2?auto=format&fit=crop&w=800&q=80" alt=""><div class="work-info"><small>SIA'S VINYL ROOM</small><h3>DJ · 아티스트 콘텐츠</h3></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="results"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">RESULTS</div><h2>TURN GOALS<br><span class="purple">INTO RESULTS.</span></h2></div><p>개인별 목표를 분석하고 레슨부터 녹음, 촬영, 오디션 준비까지 필요한 과정을 함께 설계합니다.</p></div><div class="result-grid"><article class="result reveal"><strong>01</strong><p>백제예술대학교 합격</p><small>실용음악 입시 포트폴리오</small></article><article class="result reveal"><strong>02</strong><p>국제예술대학교 합격</p><small>개인별 입시 전략과 실기 준비</small></article><article class="result reveal"><strong>03</strong><p>쇼미더머니 예선 합격</p><small>랩 오디션 실전 준비</small></article><article class="result reveal"><strong>04</strong><p>담양가사시 본선 진출</p><small>전국 14명 본선 진출 성과</small></article></div></div></section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy reveal"><div class="eyebrow">CONTACT</div><h2>START YOUR<br><span class="purple">JOURNEY.</span></h2><p>어떤 수업이 맞는지 모르겠다면 현재 실력과 목표에 맞춰 상담해드립니다.</p><div class="actions"><a class="btn primary" href="tel:18007641">전화 1800-7641</a><a class="btn ghost" href="https://pf.kakao.com/_qxkWxiK" target="_blank">카카오톡 상담</a></div></div>
+    <form id="consultForm" class="reveal">
+      <div class="form-grid">
+        <div><label for="name">이름</label><input id="name" name="name" required placeholder="이름을 입력해주세요"></div>
+        <div><label for="phone">연락처</label><input id="phone" name="phone" required placeholder="010-0000-0000"></div>
+        <div><label for="age">나이</label><input id="age" name="age" placeholder="예: 20"></div>
+        <div><label for="subject">관심 과목</label><select id="subject" name="subject"><option>보컬</option><option>랩</option><option>작곡·미디</option><option>싱어송라이터</option><option>연기</option><option>DJ</option><option>기타 상담</option></select></div>
+        <div class="full"><label for="goal">수강 목적과 상담 내용</label><textarea id="goal" name="goal" placeholder="입시, 오디션, 취미, 음원 제작 등 목표를 적어주세요."></textarea></div>
+      </div>
+      <button class="btn primary submit" type="submit">카카오톡으로 상담 내용 보내기</button>
+      <p class="notice">상담 내용이 자동 복사된 후 카카오톡 채널이 열립니다.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-grid"><div><div class="footer-brand">GA:<b>ON</b> MUSIC STUDIO</div><p>가온대중예술아카데미<br>광주 북구 서암대로 170 4층 · 전남대학교 후문 인근<br>상담문의 1800-7641</p></div><div class="social"><a href="https://www.instagram.com/gaon062/" target="_blank">INSTAGRAM</a><a href="https://www.youtube.com/@GAON062/videos" target="_blank">YOUTUBE</a><a href="https://pf.kakao.com/_qxkWxiK" target="_blank">KAKAO</a></div></div></footer>
+<div class="floating"><a class="call" href="tel:18007641">전화 상담</a><a class="chat" href="https://pf.kakao.com/_qxkWxiK" target="_blank">카카오 상담</a></div>
+
+<script>
+  const reveals=[...document.querySelectorAll('.reveal')];
+  const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+  reveals.forEach(el=>revealObserver.observe(el));
+
+  const links=[...document.querySelectorAll('.nav-links a')];
+  const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))}),{rootMargin:'-34% 0px -56% 0px'});
+  sections.forEach(s=>navObserver.observe(s));
+
+  document.querySelectorAll('[data-subject]').forEach(btn=>btn.addEventListener('click',()=>document.getElementById('subject').value=btn.dataset.subject));
+
+  document.getElementById('consultForm').addEventListener('submit',async e=>{
+    e.preventDefault();
+    const d=new FormData(e.currentTarget);
+    const msg=`[가온 홈페이지 상담 신청]\n이름: ${d.get('name')}\n연락처: ${d.get('phone')}\n나이: ${d.get('age')||'-'}\n관심 과목: ${d.get('subject')}\n상담 내용: ${d.get('goal')||'-'}`;
+    try{await navigator.clipboard.writeText(msg);alert('상담 내용이 복사되었습니다. 카카오톡 상담창에 붙여넣어 주세요.');}
+    catch(err){alert(msg)}
+    window.open('https://pf.kakao.com/_qxkWxiK','_blank');
+  });
+</script>
+</body>
+</html>
